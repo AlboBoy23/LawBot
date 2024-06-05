@@ -1,5 +1,4 @@
-<h1 align="center">LawGPT - RAG based Generative AI Attorney Chatbot</h1>
-<h3 align="center">Know Your Rights! Better Citizen, Better Nation!</h1>
+<h1 align="center">LawBot - RAG based AI Chatbot</h1>
 
 <p align="center">
 <img src="https://github.com/AlboBoy23/LawBot/blob/master/img.png" width="700"/>
@@ -30,4 +29,4 @@ LawBot is a RAG based AI chatbot for Pakistan Penal Code. This project was devel
      ```
 #### 3. Run the `vec_db.py` file, Embedding process requires GPU, use colab or kaggle for a free one and then download the `ppc_vec_db` from there to save it locally.
 #### 4. Sign up with Groq cloud, once signed up, get you API key inorder to use LLMs.
-#### 5. To run the `main.py` file, open the CMD Terminal and and type `streamlit run FULL_FILE_PATH_OF_main.PY`.
+#### 5. To run the `main.py` file, open the CMD Terminal and and type `streamlit run PATH_to_main.PY`.
