@@ -13,7 +13,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 st.set_page_config(page_title="LawGPT")
 col1, col2, col3 = st.columns([1,4,1])
 with col2:
-    st.image("C:\Abdul Saboor\Programing\TUKL Internship\LAW Bot\img.png")
+    st.image("media\img.png")
 
 st.markdown(
     """
@@ -67,7 +67,7 @@ if "memory" not in st.session_state:
     st.session_state.memory = ConversationBufferWindowMemory(k=2, memory_key="chat_history",return_messages=True) 
 
 embeddings = HuggingFaceEmbeddings(model_name="nomic-ai/nomic-embed-text-v1",model_kwargs={"trust_remote_code":True,"revision":"289f532e14dbbbd5a04753fa58739e9ba766f3c7"})
-db = FAISS.load_local("C:\Abdul Saboor\Programing\TUKL Internship\LAW Bot_2\my_512_100", embeddings,
+db = FAISS.load_local("ppc_vec_db", embeddings,
                       allow_dangerous_deserialization=True)
 db_retriever = db.as_retriever(search_type="similarity",search_kwargs={"k": 4})
 
@@ -107,7 +107,7 @@ prompt = PromptTemplate(template=prompt_template,
 
 # You can also use other LLMs options from https://python.langchain.com/docs/integrations/llms. Here I have used TogetherAI API
 load_dotenv(
-    dotenv_path="C:\Abdul Saboor\Programing\TUKL Internship\LAW Bot\.devcontainer\.env")
+    dotenv_path=".devcontainer\.env")
 TOGETHER_AI_API = os.getenv("TOGETHER_AI")
 
 # Snowflake/snowflake-arctic-instruct
