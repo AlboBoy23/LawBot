@@ -27,6 +27,6 @@ LawBot is a RAG based AI chatbot for Pakistan Penal Code. This project was devel
    - ```
      pip install -r requirements.txt
      ```
-#### 3. Run the `vec_db.py` file, Embedding process requires GPU, use colab or kaggle for a free one and then download the `ppc_vec_db` from there to save it locally.
-#### 4. Sign up with Groq cloud, once signed up, get you API key inorder to use LLMs.
+#### 3. Run the `vec_db.py` file, Embedding process requires GPU, so use colab or kaggle for a free one and then download the `ppc_vec_db` from there to save it locally.
+#### 4. Sign up with Groq cloud, once signed up, get your API key inorder to use LLMs.
 #### 5. To run the `main.py` file, open the CMD Terminal and and type `streamlit run PATH_to_main.PY`.
